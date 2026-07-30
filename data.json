@@ -1,35 +1,109 @@
 {
   "meta": {
     "appName": "M4CROPHAGE Club Hub",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "season": "Season One",
     "legacyName": "FlyingAce4",
-    "lastUpdated": "2026-07-30"
+    "dataThrough": "S1-M004",
+    "lastUpdated": "2026-07-30",
+    "startingDivision": "Legend V"
   },
   "branding": {
     "clubName": "M4CROPHAGE",
     "crestText": "M4",
     "primary": "#0A3D91",
     "secondary": "#0E67D1",
+    "accent": "#59B4FF",
     "background": "#06111F",
-    "surface": "#0B1E33",
-    "accent": "#59B4FF"
+    "surface": "#0B1E33"
   },
-  "season": {
-    "division": "Legend V",
-    "record": {
-      "wins": 2,
-      "draws": 0,
-      "losses": 0
+  "current": {
+    "nextMatch": "S1-M005",
+    "formation": "4-3-3 Holding",
+    "captain": "Federico Dimarco"
+  },
+  "players": [
+    {
+      "name": "Wesley Sneijder",
+      "position": "CAM",
+      "ovr": null,
+      "status": "Starter",
+      "startsVerified": 2,
+      "subsVerified": 0
     },
-    "points": 6,
-    "goalsFor": 5,
-    "goalsAgainst": 3,
-    "goalDifference": 2,
-    "nextMatch": "S1-M003",
-    "currentFormation": "4-3-3 Attack",
-    "currentCaptain": "Federico Dimarco"
-  },
+    {
+      "name": "Kylian Mbappé",
+      "position": "ST",
+      "ovr": 127,
+      "status": "Starter",
+      "startsVerified": 2,
+      "subsVerified": 0
+    },
+    {
+      "name": "Khvicha Kvaratskhelia",
+      "position": "LW",
+      "ovr": null,
+      "status": "Starter",
+      "startsVerified": 1,
+      "subsVerified": 0
+    },
+    {
+      "name": "Christian Pulisic",
+      "position": "RW",
+      "ovr": null,
+      "status": "Rotation",
+      "startsVerified": 1,
+      "subsVerified": 1
+    },
+    {
+      "name": "Ruud Gullit",
+      "position": "CM",
+      "ovr": null,
+      "status": "Starter",
+      "startsVerified": 2,
+      "subsVerified": 0
+    },
+    {
+      "name": "Lionel Messi",
+      "position": "RW",
+      "ovr": 126,
+      "status": "Starter",
+      "startsVerified": 2,
+      "subsVerified": 0
+    },
+    {
+      "name": "Jude Bellingham",
+      "position": "CM",
+      "ovr": null,
+      "status": "Starter",
+      "startsVerified": 2,
+      "subsVerified": 0
+    },
+    {
+      "name": "David",
+      "position": "ST",
+      "ovr": null,
+      "status": "Rotation",
+      "startsVerified": 0,
+      "subsVerified": 1
+    },
+    {
+      "name": "Federico Dimarco",
+      "position": "LB",
+      "ovr": null,
+      "status": "Captain",
+      "startsVerified": 1,
+      "subsVerified": 0
+    },
+    {
+      "name": "Edwin van der Sar",
+      "position": "GK",
+      "ovr": null,
+      "status": "Starter",
+      "startsVerified": 4,
+      "subsVerified": 0
+    }
+  ],
   "matches": [
     {
       "id": "S1-M001",
@@ -39,23 +113,33 @@
       "scoreAgainst": 1,
       "formation": "3-5-2",
       "captain": "Christian Pulisic",
+      "headline": "Sneijder opens the archive; Gullit wins it",
+      "summary": "M4CROPHAGE opened Season One with a composed 2-1 victory. Sneijder struck first, the opponent leveled before halftime, and Gullit supplied the decisive second-half finish.",
       "goals": [
         {
-          "player": "Wesley Sneijder",
-          "minute": "15\u2019",
+          "minute": "15’",
+          "scorer": "Wesley Sneijder",
+          "assist": null,
           "gva": 2
         },
         {
-          "player": "Ruud Gullit",
-          "minute": "65\u2019",
+          "minute": "65’",
+          "scorer": "Ruud Gullit",
+          "assist": null,
           "gva": 2
         }
       ],
-      "assists": [
-        "Kylian Mbapp\u00e9",
-        "Christian Pulisic"
+      "recordedAssists": [
+        {
+          "player": "Kylian Mbappé",
+          "count": 1
+        },
+        {
+          "player": "Christian Pulisic",
+          "count": 1
+        }
       ],
-      "assistsMapped": false,
+      "assistMappingKnown": false,
       "stats": {
         "shots": 4,
         "shotsOnTarget": 3,
@@ -67,11 +151,12 @@
         "offsides": 2
       },
       "goalkeeper": {
-        "player": "Edwin van der Sar",
-        "saves": 2,
+        "name": "Edwin van der Sar",
         "shotsOnTargetFaced": 3,
         "goalsAllowed": 1,
-        "savePercentage": 66.7
+        "creditedSaves": 2,
+        "savePercentage": 66.7,
+        "cleanSheet": false
       },
       "notes": [
         "Season opener",
@@ -79,12 +164,10 @@
         "Gullit scored the winner"
       ],
       "tags": [
-        "season opener",
-        "formation debut",
-        "captain debut"
-      ],
-      "headline": "Sneijder opens the archive; Gullit wins it",
-      "summary": "M4CROPHAGE opened Season One with a composed 2-1 victory. Sneijder struck first, the opponent leveled before halftime, and Gullit supplied the decisive second-half finish."
+        "Season Opener",
+        "Formation Debut",
+        "Captain Debut"
+      ]
     },
     {
       "id": "S1-M002",
@@ -94,29 +177,43 @@
       "scoreAgainst": 2,
       "formation": "4-3-3 Attack",
       "captain": "Federico Dimarco",
+      "headline": "Three unanswered complete the first great comeback",
+      "summary": "Down 0-2, M4CROPHAGE erupted into life. Sneijder struck before the break, Mbappé equalized, and Kvaratskhelia completed the first two-goal comeback in club archive history.",
       "goals": [
         {
-          "player": "Wesley Sneijder",
-          "minute": "45+3\u2019",
+          "minute": "45+3’",
+          "scorer": "Wesley Sneijder",
+          "assist": null,
           "gva": 2
         },
         {
-          "player": "Kylian Mbapp\u00e9",
-          "minute": "60\u2019",
+          "minute": "60’",
+          "scorer": "Kylian Mbappé",
+          "assist": null,
           "gva": 2
         },
         {
-          "player": "Khvicha Kvaratskhelia",
-          "minute": "73\u2019",
+          "minute": "73’",
+          "scorer": "Khvicha Kvaratskhelia",
+          "assist": null,
           "gva": 2
         }
       ],
-      "assists": [
-        "Lionel Messi",
-        "Khvicha Kvaratskhelia",
-        "Christian Pulisic"
+      "recordedAssists": [
+        {
+          "player": "Lionel Messi",
+          "count": 1
+        },
+        {
+          "player": "Khvicha Kvaratskhelia",
+          "count": 1
+        },
+        {
+          "player": "Christian Pulisic",
+          "count": 1
+        }
       ],
-      "assistsMapped": false,
+      "assistMappingKnown": false,
       "stats": {
         "shots": 7,
         "shotsOnTarget": 6,
@@ -128,11 +225,12 @@
         "offsides": 0
       },
       "goalkeeper": {
-        "player": "Edwin van der Sar",
-        "saves": 3,
+        "name": "Edwin van der Sar",
         "shotsOnTargetFaced": 5,
         "goalsAllowed": 2,
-        "savePercentage": 60.0
+        "creditedSaves": 3,
+        "savePercentage": 60.0,
+        "cleanSheet": false
       },
       "notes": [
         "First match using 4-3-3 Attack",
@@ -142,206 +240,130 @@
         "Dimarco restored as captain"
       ],
       "tags": [
-        "comeback",
-        "formation debut",
-        "captaincy change"
+        "Comeback",
+        "Formation Debut",
+        "Captaincy Change"
+      ]
+    },
+    {
+      "id": "S1-M003",
+      "opponent": "TONYIRX",
+      "result": "L",
+      "scoreFor": 1,
+      "scoreAgainst": 4,
+      "formation": "4-3-3 Attack",
+      "captain": "Federico Dimarco",
+      "headline": "Attack stalls as M4CROPHAGE suffers first defeat",
+      "summary": "M4CROPHAGE managed only one shot as TONYIRX scored four times from five shots on target. Substitute striker David scored the club's lone goal in the 74th minute, assisted by Christian Pulisic.",
+      "goals": [
+        {
+          "minute": "74’",
+          "scorer": "David",
+          "assist": "Christian Pulisic",
+          "gva": 0
+        }
       ],
-      "headline": "Three unanswered complete the first great comeback",
-      "summary": "Down 0-2, M4CROPHAGE detonated into life. Sneijder struck before the break, Mbapp\u00e9 equalized, and Kvaratskhelia completed the first two-goal comeback in club archive history."
-    }
-  ],
-  "players": [
-    {
-      "name": "Wesley Sneijder",
-      "position": "CAM",
-      "ovr": null,
-      "starts": 2,
-      "subs": 0,
-      "goals": 2,
-      "assists": 0,
-      "gva": 4,
-      "captainStarts": 0,
-      "status": "Starter"
+      "recordedAssists": [
+        {
+          "player": "Christian Pulisic",
+          "count": 1
+        }
+      ],
+      "assistMappingKnown": true,
+      "stats": {
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "opponentShots": 5,
+        "opponentShotsOnTarget": 5,
+        "possession": 42,
+        "passAccuracy": 77,
+        "fouls": 0,
+        "offsides": 0
+      },
+      "goalkeeper": {
+        "name": "Edwin van der Sar",
+        "shotsOnTargetFaced": 5,
+        "goalsAllowed": 4,
+        "creditedSaves": 1,
+        "savePercentage": 20.0,
+        "cleanSheet": false
+      },
+      "notes": [
+        "First defeat of Season One",
+        "David scored his first official archive goal",
+        "Christian Pulisic recorded his third assist of the season",
+        "M4CROPHAGE generated only one shot",
+        "The performance prompted a switch to 4-3-3 Holding"
+      ],
+      "tags": [
+        "First Defeat",
+        "David First Goal",
+        "Low Shot Volume",
+        "Formation Change"
+      ]
     },
     {
-      "name": "Kylian Mbapp\u00e9",
-      "position": "ST",
-      "ovr": 127,
-      "starts": 2,
-      "subs": 0,
-      "goals": 1,
-      "assists": 1,
-      "gva": 2,
-      "captainStarts": 0,
-      "status": "Starter"
-    },
-    {
-      "name": "Khvicha Kvaratskhelia",
-      "position": "LW",
-      "ovr": null,
-      "starts": 1,
-      "subs": 0,
-      "goals": 1,
-      "assists": 1,
-      "gva": 2,
-      "captainStarts": 0,
-      "status": "Starter"
-    },
-    {
-      "name": "Christian Pulisic",
-      "position": "RW",
-      "ovr": null,
-      "starts": 1,
-      "subs": 1,
-      "goals": 0,
-      "assists": 2,
-      "gva": 0,
-      "captainStarts": 1,
-      "status": "Rotation"
-    },
-    {
-      "name": "Ruud Gullit",
-      "position": "CM",
-      "ovr": null,
-      "starts": 2,
-      "subs": 0,
-      "goals": 1,
-      "assists": 0,
-      "gva": 2,
-      "captainStarts": 0,
-      "status": "Starter"
-    },
-    {
-      "name": "Lionel Messi",
-      "position": "RW",
-      "ovr": 126,
-      "starts": 2,
-      "subs": 0,
-      "goals": 0,
-      "assists": 1,
-      "gva": 0,
-      "captainStarts": 0,
-      "status": "Starter"
-    },
-    {
-      "name": "Jude Bellingham",
-      "position": "CM",
-      "ovr": null,
-      "starts": 2,
-      "subs": 0,
-      "goals": 0,
-      "assists": 0,
-      "gva": 0,
-      "captainStarts": 0,
-      "status": "Starter"
-    },
-    {
-      "name": "Federico Dimarco",
-      "position": "LB",
-      "ovr": null,
-      "starts": 1,
-      "subs": 0,
-      "goals": 0,
-      "assists": 0,
-      "gva": 0,
-      "captainStarts": 1,
-      "status": "Captain"
-    },
-    {
-      "name": "Edwin van der Sar",
-      "position": "GK",
-      "ovr": null,
-      "starts": 2,
-      "subs": 0,
-      "goals": 0,
-      "assists": 0,
-      "gva": 0,
-      "captainStarts": 0,
-      "status": "Starter"
-    }
-  ],
-  "formations": [
-    {
-      "name": "3-5-2",
-      "matches": 1,
-      "wins": 1,
-      "draws": 0,
-      "losses": 0,
-      "points": 3,
-      "goalsFor": 2,
-      "goalsAgainst": 1,
-      "shots": 4,
-      "shotsOnTarget": 3,
-      "avgPossession": 48,
-      "avgPassAccuracy": 82
-    },
-    {
-      "name": "4-3-3 Attack",
-      "matches": 1,
-      "wins": 1,
-      "draws": 0,
-      "losses": 0,
-      "points": 3,
-      "goalsFor": 3,
-      "goalsAgainst": 2,
-      "shots": 7,
-      "shotsOnTarget": 6,
-      "avgPossession": 49,
-      "avgPassAccuracy": 93
-    }
-  ],
-  "goalkeepers": [
-    {
-      "name": "Edwin van der Sar",
-      "starts": 2,
-      "shotsOnTargetFaced": 8,
-      "goalsAllowed": 3,
-      "saves": 5,
-      "savePercentage": 62.5,
-      "cleanSheets": 0,
-      "threePlusSaveMatches": 1
-    }
-  ],
-  "captains": [
-    {
-      "name": "Christian Pulisic",
-      "starts": 1,
-      "wins": 1,
-      "draws": 0,
-      "losses": 0,
-      "goalsFor": 2,
-      "goalsAgainst": 1
-    },
-    {
-      "name": "Federico Dimarco",
-      "starts": 1,
-      "wins": 1,
-      "draws": 0,
-      "losses": 0,
-      "goalsFor": 3,
-      "goalsAgainst": 2
-    }
-  ],
-  "news": [
-    {
-      "title": "Sneijder scores in consecutive matches",
-      "body": "The midfielder has opened the season with two goals in two starts.",
-      "match": "S1-M002"
-    },
-    {
-      "title": "Dimarco reclaims captaincy",
-      "body": "Federico Dimarco returned as captain for the comeback win over TheBestIsBarca.",
-      "match": "S1-M002"
-    },
-    {
-      "title": "First two-goal comeback",
-      "body": "M4CROPHAGE recovered from 0-2 to win 3-2 with three unanswered goals.",
-      "match": "S1-M002"
-    },
-    {
-      "title": "Mbapp\u00e9 opens his archive account",
-      "body": "Kylian Mbapp\u00e9 scored the equalizer in S1-M002.",
-      "match": "S1-M002"
+      "id": "S1-M004",
+      "opponent": "Axel_v5",
+      "result": "W",
+      "scoreFor": 2,
+      "scoreAgainst": 1,
+      "formation": "4-3-3 Holding",
+      "captain": "Federico Dimarco",
+      "headline": "Holding formation delivers an immediate response",
+      "summary": "Bellingham and Sneijder scored inside the opening 25 minutes as 4-3-3 Holding won on its debut. The opponent pulled one back through Dembélé, but M4CROPHAGE protected the lead despite late pressure.",
+      "goals": [
+        {
+          "minute": "14’",
+          "scorer": "Jude Bellingham",
+          "assist": null,
+          "gva": 2
+        },
+        {
+          "minute": "25’",
+          "scorer": "Wesley Sneijder",
+          "assist": null,
+          "gva": 2
+        }
+      ],
+      "recordedAssists": [
+        {
+          "player": "Lionel Messi",
+          "count": 2
+        }
+      ],
+      "assistMappingKnown": false,
+      "stats": {
+        "shots": 3,
+        "shotsOnTarget": 3,
+        "opponentShots": 4,
+        "opponentShotsOnTarget": 2,
+        "possession": 53,
+        "passAccuracy": 91,
+        "fouls": 0,
+        "offsides": 0
+      },
+      "goalkeeper": {
+        "name": "Edwin van der Sar",
+        "shotsOnTargetFaced": 2,
+        "goalsAllowed": 1,
+        "creditedSaves": 1,
+        "savePercentage": 50.0,
+        "cleanSheet": false
+      },
+      "notes": [
+        "First match using 4-3-3 Holding",
+        "Jude Bellingham scored his first official archive goal",
+        "Wesley Sneijder scored his third goal of the season",
+        "Lionel Messi recorded two assists",
+        "M4CROPHAGE led 2-0 after 25 minutes"
+      ],
+      "tags": [
+        "Formation Debut",
+        "Bounce-Back Win",
+        "Bellingham First Goal",
+        "Messi Two Assists"
+      ]
     }
   ]
 }

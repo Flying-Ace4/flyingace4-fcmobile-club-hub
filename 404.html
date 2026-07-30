@@ -1,80 +1,22 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#06111F">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>M4CROPHAGE Club Hub</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="topbar">
-    <div class="brand">
-      <div class="crest" id="crest">M4</div>
-      <div><strong id="clubName">M4CROPHAGE</strong><small id="seasonName">Season One</small></div>
-    </div>
-    <span class="version">v0.2</span>
-  </header>
-
-  <main id="app">
-    <section class="view active" data-view="home">
-      <div class="hero">
-        <p class="eyebrow">CURRENT CAMPAIGN</p>
-        <h1 id="recordHero">2-0-0</h1>
-        <p id="heroSub">Legend V · 6 points · +2 GD</p>
-      </div>
-      <div class="metric-grid" id="metricGrid"></div>
-      <section class="panel"><div class="section-head"><h2>Leaders</h2></div><div class="leaders" id="leaders"></div></section>
-      <section class="panel"><div class="section-head"><h2>Recent Matches</h2><button data-jump="matches">View all</button></div><div id="recentMatches"></div></section>
-      <section class="panel"><div class="section-head"><h2>Club News</h2></div><div id="homeNews"></div></section>
-    </section>
-
-    <section class="view" data-view="matches">
-      <div class="page-title"><p class="eyebrow">SEASON ONE</p><h1>Match Archive</h1></div>
-      <div id="matchList"></div>
-    </section>
-
-    <section class="view" data-view="players">
-      <div class="page-title"><p class="eyebrow">SQUAD</p><h1>Player Stats</h1></div>
-      <div class="filter-row">
-        <button class="chip active" data-sort="gva">GVA</button>
-        <button class="chip" data-sort="goals">Goals</button>
-        <button class="chip" data-sort="assists">Assists</button>
-        <button class="chip" data-sort="starts">Starts</button>
-      </div>
-      <div id="playerList"></div>
-    </section>
-
-    <section class="view" data-view="analytics">
-      <div class="page-title"><p class="eyebrow">PERFORMANCE</p><h1>Analytics</h1></div>
-      <section class="panel"><div class="section-head"><h2>Formation Lab</h2></div><div id="formationList"></div></section>
-      <section class="panel"><div class="section-head"><h2>Goalkeeper Centre</h2></div><div id="goalkeeperCentre"></div></section>
-      <section class="panel"><div class="section-head"><h2>Captaincy</h2></div><div id="captaincy"></div></section>
-    </section>
-
-    <section class="view" data-view="news">
-      <div class="page-title"><p class="eyebrow">VERIFIED EVENTS</p><h1>Club News</h1></div>
-      <div id="newsList"></div>
-    </section>
-  </main>
-
-  <nav class="bottom-nav">
-    <button class="nav-btn active" data-target="home"><span>⌂</span>Home</button>
-    <button class="nav-btn" data-target="matches"><span>▣</span>Matches</button>
-    <button class="nav-btn" data-target="players"><span>♟</span>Players</button>
-    <button class="nav-btn" data-target="analytics"><span>⌁</span>Analytics</button>
-    <button class="nav-btn" data-target="news"><span>✦</span>News</button>
-  </nav>
-
-  <dialog id="matchDialog">
-    <div class="dialog-shell">
-      <button class="close-btn" id="closeDialog" aria-label="Close">×</button>
-      <div id="matchDetail"></div>
-    </div>
-  </dialog>
-
-  <script src="app.js"></script>
-</body>
-</html>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#06111F"><meta name="apple-mobile-web-app-capable" content="yes">
+<title>M4CROPHAGE Club Hub</title><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css">
+</head><body>
+<header class="topbar"><div class="brand"><div class="crest" id="crest">M4</div><div><strong id="clubName">M4CROPHAGE</strong><small id="seasonName">Season One</small></div></div><span class="version">v0.3</span></header>
+<main id="app">
+<section class="view active" data-view="home"><div class="hero"><p class="eyebrow">CURRENT CAMPAIGN</p><h1 id="recordHero"></h1><p id="heroSub"></p></div><div class="metric-grid" id="metricGrid"></div><section class="panel"><div class="section-head"><h2>Club Leaders</h2></div><div class="leaders" id="leaders"></div></section><section class="panel"><div class="section-head"><h2>Recent Form</h2><button data-jump="matches">Full archive</button></div><div id="recentMatches"></div></section><section class="panel"><div class="section-head"><h2>Club Records</h2></div><div id="clubRecords"></div></section><section class="panel"><div class="section-head"><h2>Latest News</h2><button data-jump="news">All news</button></div><div id="homeNews"></div></section></section>
+<section class="view" data-view="matches"><div class="page-title"><p class="eyebrow">SEASON ONE</p><h1>Match Centre</h1><p>Every result, event, and verified note.</p></div><div id="matchList"></div></section>
+<section class="view" data-view="players"><div class="page-title"><p class="eyebrow">SQUAD</p><h1>Player Profiles</h1><p>Tap a player to open the season dossier.</p></div><div class="filter-row"><button class="chip active" data-sort="gva">GVA</button><button class="chip" data-sort="goals">Goals</button><button class="chip" data-sort="assists">Assists</button><button class="chip" data-sort="starts">Starts</button></div><div id="playerList"></div></section>
+<section class="view" data-view="analytics"><div class="page-title"><p class="eyebrow">PERFORMANCE</p><h1>Analytics Lab</h1></div><section class="panel"><div class="section-head"><h2>Formation Lab</h2></div><div id="formationList"></div></section><section class="panel"><div class="section-head"><h2>Goalkeeper Centre</h2></div><div id="goalkeeperCentre"></div></section><section class="panel"><div class="section-head"><h2>Captaincy</h2></div><div id="captaincy"></div></section></section>
+<section class="view" data-view="news"><div class="page-title"><p class="eyebrow">ARCHIVE-GENERATED</p><h1>Club News</h1><p>Only verified events make the wire.</p></div><div id="newsList"></div></section>
+</main>
+<nav class="bottom-nav">
+<button class="nav-btn active" data-target="home"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5v8a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</button>
+<button class="nav-btn" data-target="matches"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 5v14M16 5v14"/></svg>Matches</button>
+<button class="nav-btn" data-target="players"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4.7 3.4-7 8-7s7.2 2.3 8 7"/></svg>Players</button>
+<button class="nav-btn" data-target="analytics"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>Analytics</button>
+<button class="nav-btn" data-target="news"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg>News</button>
+</nav>
+<dialog id="detailDialog"><div class="dialog-shell"><button class="close-btn" id="closeDialog">×</button><div id="detailContent"></div></div></dialog>
+<script src="app.js"></script></body></html>
