@@ -1,0 +1,26 @@
+# M4CROPHAGE Root Logo Fix
+
+Your logo files are stored in the repository root, so this patch uses root-level paths.
+
+Upload every file in this ZIP to the repository root and commit directly to `main`.
+
+Important replacements:
+- index.html
+- 404.html
+- app.js
+- styles.css
+- manifest.webmanifest
+
+Logo files:
+- apple-touch-icon.png
+- favicon-32.png
+- macrophage-icon-192.png
+- macrophage-icon-512.png
+- macrophage-icon-1024.png
+- macrophage-logo.svg
+
+After GitHub Pages republishes:
+1. Open the site in Safari and verify the top-left in-app crest changed.
+2. Delete the old Home Screen shortcut.
+3. Refresh the site in Safari.
+4. Share → Add to Home Screen.
