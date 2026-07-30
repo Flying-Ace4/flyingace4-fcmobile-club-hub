@@ -1,4 +1,4 @@
-# M4CROPHAGE Club Hub v0.3
+# M4CROPHAGE Club Hub v0.3.1
 
 ## What changed
 - Complete match-driven data model through S1-M004
@@ -33,3 +33,8 @@ Upload and replace these files in the repository root:
 - README.md
 
 Commit directly to `main`. GitHub Pages will republish automatically.
+
+## Cache refresh fix
+- Match data is fetched with no-store and a timestamp query.
+- CSS and JavaScript references are versioned.
+- Future match updates should normally require replacing only data.json.
