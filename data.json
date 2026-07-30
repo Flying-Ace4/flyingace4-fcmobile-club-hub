@@ -1,0 +1,347 @@
+{
+  "meta": {
+    "appName": "M4CROPHAGE Club Hub",
+    "version": "0.2.0",
+    "season": "Season One",
+    "legacyName": "FlyingAce4",
+    "lastUpdated": "2026-07-30"
+  },
+  "branding": {
+    "clubName": "M4CROPHAGE",
+    "crestText": "M4",
+    "primary": "#0A3D91",
+    "secondary": "#0E67D1",
+    "background": "#06111F",
+    "surface": "#0B1E33",
+    "accent": "#59B4FF"
+  },
+  "season": {
+    "division": "Legend V",
+    "record": {
+      "wins": 2,
+      "draws": 0,
+      "losses": 0
+    },
+    "points": 6,
+    "goalsFor": 5,
+    "goalsAgainst": 3,
+    "goalDifference": 2,
+    "nextMatch": "S1-M003",
+    "currentFormation": "4-3-3 Attack",
+    "currentCaptain": "Federico Dimarco"
+  },
+  "matches": [
+    {
+      "id": "S1-M001",
+      "opponent": "Carlitos1981",
+      "result": "W",
+      "scoreFor": 2,
+      "scoreAgainst": 1,
+      "formation": "3-5-2",
+      "captain": "Christian Pulisic",
+      "goals": [
+        {
+          "player": "Wesley Sneijder",
+          "minute": "15\u2019",
+          "gva": 2
+        },
+        {
+          "player": "Ruud Gullit",
+          "minute": "65\u2019",
+          "gva": 2
+        }
+      ],
+      "assists": [
+        "Kylian Mbapp\u00e9",
+        "Christian Pulisic"
+      ],
+      "assistsMapped": false,
+      "stats": {
+        "shots": 4,
+        "shotsOnTarget": 3,
+        "opponentShots": 5,
+        "opponentShotsOnTarget": 3,
+        "possession": 48,
+        "passAccuracy": 82,
+        "fouls": 0,
+        "offsides": 2
+      },
+      "goalkeeper": {
+        "player": "Edwin van der Sar",
+        "saves": 2,
+        "shotsOnTargetFaced": 3,
+        "goalsAllowed": 1,
+        "savePercentage": 66.7
+      },
+      "notes": [
+        "Season opener",
+        "Opponent equalized at 45+2",
+        "Gullit scored the winner"
+      ],
+      "tags": [
+        "season opener",
+        "formation debut",
+        "captain debut"
+      ],
+      "headline": "Sneijder opens the archive; Gullit wins it",
+      "summary": "M4CROPHAGE opened Season One with a composed 2-1 victory. Sneijder struck first, the opponent leveled before halftime, and Gullit supplied the decisive second-half finish."
+    },
+    {
+      "id": "S1-M002",
+      "opponent": "TheBestIsBarca",
+      "result": "W",
+      "scoreFor": 3,
+      "scoreAgainst": 2,
+      "formation": "4-3-3 Attack",
+      "captain": "Federico Dimarco",
+      "goals": [
+        {
+          "player": "Wesley Sneijder",
+          "minute": "45+3\u2019",
+          "gva": 2
+        },
+        {
+          "player": "Kylian Mbapp\u00e9",
+          "minute": "60\u2019",
+          "gva": 2
+        },
+        {
+          "player": "Khvicha Kvaratskhelia",
+          "minute": "73\u2019",
+          "gva": 2
+        }
+      ],
+      "assists": [
+        "Lionel Messi",
+        "Khvicha Kvaratskhelia",
+        "Christian Pulisic"
+      ],
+      "assistsMapped": false,
+      "stats": {
+        "shots": 7,
+        "shotsOnTarget": 6,
+        "opponentShots": 6,
+        "opponentShotsOnTarget": 5,
+        "possession": 49,
+        "passAccuracy": 93,
+        "fouls": 0,
+        "offsides": 0
+      },
+      "goalkeeper": {
+        "player": "Edwin van der Sar",
+        "saves": 3,
+        "shotsOnTargetFaced": 5,
+        "goalsAllowed": 2,
+        "savePercentage": 60.0
+      },
+      "notes": [
+        "First match using 4-3-3 Attack",
+        "Trailed 0-2",
+        "Scored three unanswered goals",
+        "First two-goal comeback",
+        "Dimarco restored as captain"
+      ],
+      "tags": [
+        "comeback",
+        "formation debut",
+        "captaincy change"
+      ],
+      "headline": "Three unanswered complete the first great comeback",
+      "summary": "Down 0-2, M4CROPHAGE detonated into life. Sneijder struck before the break, Mbapp\u00e9 equalized, and Kvaratskhelia completed the first two-goal comeback in club archive history."
+    }
+  ],
+  "players": [
+    {
+      "name": "Wesley Sneijder",
+      "position": "CAM",
+      "ovr": null,
+      "starts": 2,
+      "subs": 0,
+      "goals": 2,
+      "assists": 0,
+      "gva": 4,
+      "captainStarts": 0,
+      "status": "Starter"
+    },
+    {
+      "name": "Kylian Mbapp\u00e9",
+      "position": "ST",
+      "ovr": 127,
+      "starts": 2,
+      "subs": 0,
+      "goals": 1,
+      "assists": 1,
+      "gva": 2,
+      "captainStarts": 0,
+      "status": "Starter"
+    },
+    {
+      "name": "Khvicha Kvaratskhelia",
+      "position": "LW",
+      "ovr": null,
+      "starts": 1,
+      "subs": 0,
+      "goals": 1,
+      "assists": 1,
+      "gva": 2,
+      "captainStarts": 0,
+      "status": "Starter"
+    },
+    {
+      "name": "Christian Pulisic",
+      "position": "RW",
+      "ovr": null,
+      "starts": 1,
+      "subs": 1,
+      "goals": 0,
+      "assists": 2,
+      "gva": 0,
+      "captainStarts": 1,
+      "status": "Rotation"
+    },
+    {
+      "name": "Ruud Gullit",
+      "position": "CM",
+      "ovr": null,
+      "starts": 2,
+      "subs": 0,
+      "goals": 1,
+      "assists": 0,
+      "gva": 2,
+      "captainStarts": 0,
+      "status": "Starter"
+    },
+    {
+      "name": "Lionel Messi",
+      "position": "RW",
+      "ovr": 126,
+      "starts": 2,
+      "subs": 0,
+      "goals": 0,
+      "assists": 1,
+      "gva": 0,
+      "captainStarts": 0,
+      "status": "Starter"
+    },
+    {
+      "name": "Jude Bellingham",
+      "position": "CM",
+      "ovr": null,
+      "starts": 2,
+      "subs": 0,
+      "goals": 0,
+      "assists": 0,
+      "gva": 0,
+      "captainStarts": 0,
+      "status": "Starter"
+    },
+    {
+      "name": "Federico Dimarco",
+      "position": "LB",
+      "ovr": null,
+      "starts": 1,
+      "subs": 0,
+      "goals": 0,
+      "assists": 0,
+      "gva": 0,
+      "captainStarts": 1,
+      "status": "Captain"
+    },
+    {
+      "name": "Edwin van der Sar",
+      "position": "GK",
+      "ovr": null,
+      "starts": 2,
+      "subs": 0,
+      "goals": 0,
+      "assists": 0,
+      "gva": 0,
+      "captainStarts": 0,
+      "status": "Starter"
+    }
+  ],
+  "formations": [
+    {
+      "name": "3-5-2",
+      "matches": 1,
+      "wins": 1,
+      "draws": 0,
+      "losses": 0,
+      "points": 3,
+      "goalsFor": 2,
+      "goalsAgainst": 1,
+      "shots": 4,
+      "shotsOnTarget": 3,
+      "avgPossession": 48,
+      "avgPassAccuracy": 82
+    },
+    {
+      "name": "4-3-3 Attack",
+      "matches": 1,
+      "wins": 1,
+      "draws": 0,
+      "losses": 0,
+      "points": 3,
+      "goalsFor": 3,
+      "goalsAgainst": 2,
+      "shots": 7,
+      "shotsOnTarget": 6,
+      "avgPossession": 49,
+      "avgPassAccuracy": 93
+    }
+  ],
+  "goalkeepers": [
+    {
+      "name": "Edwin van der Sar",
+      "starts": 2,
+      "shotsOnTargetFaced": 8,
+      "goalsAllowed": 3,
+      "saves": 5,
+      "savePercentage": 62.5,
+      "cleanSheets": 0,
+      "threePlusSaveMatches": 1
+    }
+  ],
+  "captains": [
+    {
+      "name": "Christian Pulisic",
+      "starts": 1,
+      "wins": 1,
+      "draws": 0,
+      "losses": 0,
+      "goalsFor": 2,
+      "goalsAgainst": 1
+    },
+    {
+      "name": "Federico Dimarco",
+      "starts": 1,
+      "wins": 1,
+      "draws": 0,
+      "losses": 0,
+      "goalsFor": 3,
+      "goalsAgainst": 2
+    }
+  ],
+  "news": [
+    {
+      "title": "Sneijder scores in consecutive matches",
+      "body": "The midfielder has opened the season with two goals in two starts.",
+      "match": "S1-M002"
+    },
+    {
+      "title": "Dimarco reclaims captaincy",
+      "body": "Federico Dimarco returned as captain for the comeback win over TheBestIsBarca.",
+      "match": "S1-M002"
+    },
+    {
+      "title": "First two-goal comeback",
+      "body": "M4CROPHAGE recovered from 0-2 to win 3-2 with three unanswered goals.",
+      "match": "S1-M002"
+    },
+    {
+      "title": "Mbapp\u00e9 opens his archive account",
+      "body": "Kylian Mbapp\u00e9 scored the equalizer in S1-M002.",
+      "match": "S1-M002"
+    }
+  ]
+}

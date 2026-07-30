@@ -1,0 +1,9 @@
+{
+  "name": "M4CROPHAGE Club Hub",
+  "short_name": "M4CROPHAGE",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#06111F",
+  "theme_color": "#06111F",
+  "icons": []
+}
