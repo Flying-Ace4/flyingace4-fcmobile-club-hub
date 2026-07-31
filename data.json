@@ -4,7 +4,7 @@
     "version": "0.3.1",
     "season": "Season One",
     "legacyName": "FlyingAce4",
-    "dataThrough": "S1-M004",
+    "dataThrough": "S1-M005",
     "lastUpdated": "2026-07-30",
     "startingDivision": "Legend V"
   },
@@ -18,7 +18,7 @@
     "surface": "#0B1E33"
   },
   "current": {
-    "nextMatch": "S1-M005",
+    "nextMatch": "S1-M006",
     "formation": "4-3-3 Holding",
     "captain": "Federico Dimarco"
   },
@@ -100,7 +100,7 @@
       "position": "GK",
       "ovr": null,
       "status": "Starter",
-      "startsVerified": 4,
+      "startsVerified": 5,
       "subsVerified": 0
     }
   ],
@@ -363,6 +363,55 @@
         "Bounce-Back Win",
         "Bellingham First Goal",
         "Messi Two Assists"
+      ]
+    },
+    {
+      "id": "S1-M005",
+      "opponent": "SoulEditz17",
+      "result": "D",
+      "scoreFor": 0,
+      "scoreAgainst": 0,
+      "formation": "4-3-3 Holding",
+      "captain": "Federico Dimarco",
+      "headline": "Holding shape secures the first clean sheet",
+      "summary": "M4CROPHAGE played out a controlled scoreless draw against SoulEditz17. The opponent recorded three shots on target, but only one was described as a halfway dangerous chance. The defensive structure remained comfortable, while M4CROPHAGE failed to register a shot.",
+      "goals": [],
+      "recordedAssists": [],
+      "assistMappingKnown": true,
+      "stats": {
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "opponentShots": 3,
+        "opponentShotsOnTarget": 3,
+        "possession": 46,
+        "passAccuracy": 81,
+        "fouls": 0,
+        "offsides": 0
+      },
+      "goalkeeper": {
+        "name": "Edwin van der Sar",
+        "shotsOnTargetFaced": 3,
+        "goalsAllowed": 0,
+        "creditedSaves": 3,
+        "savePercentage": 100.0,
+        "cleanSheet": true
+      },
+      "notes": [
+        "First draw of Season One",
+        "First clean sheet of Season One",
+        "First scoreless match of Season One",
+        "First archived match in which M4CROPHAGE recorded zero shots",
+        "The draw felt comfortable rather than desperate",
+        "The opponent created only one halfway dangerous chance",
+        "4-3-3 Holding remained unbeaten through its first two matches"
+      ],
+      "tags": [
+        "Draw",
+        "Clean Sheet",
+        "Scoreless",
+        "Zero Shots",
+        "Comfortable Defensively",
+        "4-3-3 Holding"
       ]
     }
   ]
